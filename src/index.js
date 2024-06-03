@@ -127,7 +127,7 @@ async function playRaceEngine(character1, character2, character3, character4){
             await logResult(character4.nome, "poder", diceResult4, character4.poder);
         }
 
-        // Determinar o vencedor da rodada
+    
         let maxSkill = Math.max(testeSkill1, testeSkill2, testeSkill3, testeSkill4);
         if(testeSkill1 === maxSkill) character1.pontos++;
         if(testeSkill2 === maxSkill) character2.pontos++;
